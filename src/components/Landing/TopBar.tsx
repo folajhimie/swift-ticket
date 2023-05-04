@@ -42,8 +42,8 @@ const TopBar = () => {
                             </div>
 
                             <div className=''>
-                                <div className='rounded-lg shadow-md border xs:p-4 xxs:p-2 w-fit xl:absolute xl:top-72 xl:left-[45rem] lg:absolute lg:top-60 lg:left-[45rem] xxs:absolute xxs:-bottom-[54rem] xxs:left-4 z-40 bg-white xs:absolute xs:bottom-96 xs:left-4'>
-                                    <div className='text-[#61297F] xs:text-sm xxs:text-[8px] font-semibold'>
+                                <div className='rounded-lg shadow-md border xs:p-4 xxs:p-2 xs:w-64 xxs:w-fit xl:absolute xl:bottom-96 xl:left-[45rem] lg:absolute lg:left-[27rem] lg:bottom-60 xxs:absolute xxs:left-4 z-40 bg-white xs:absolute xs:bottom-96 xs:left-4 flex items-start justify-center flex-col text-start '>
+                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold'>
                                         Purchase boat tickets with ease
                                     </div>
                                     <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px]'>
@@ -56,9 +56,9 @@ const TopBar = () => {
                                     <img src={iphone} alt="" />
                                 </div>
 
-                                <div className='rounded-lg shadow-md border xs:p-4 xxs:p-2 w-fit xl:absolute xl:bottom-32 xl:left-[45rem] lg:absolute lg:bottom-32 lg:left-[45rem] z-40 bg-white xxs:absolute xxs:-bottom-[64rem] xxs:left-4'>
+                                <div className='rounded-lg shadow-md border xs:p-4 xxs:p-2 xs:w-64 xl:absolute xl:bottom-40 xl:left-[45rem] lg:absolute lg:left-[27rem] lg:bottom-0 z-40 bg-white xxs:absolute xxs:-bottom-32 xs:left-[45rem] xs:absolute xs:-bottom-[64rem] xxs:left-4 flex items-start justify-center flex-col text-start '>
 
-                                    <div className='text-[#61297F] xs:text-sm xxs:text-[8px] font-semibold'>
+                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold'>
                                         Smart Budgeting system
                                     </div>
                                     <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px]'>
@@ -66,9 +66,9 @@ const TopBar = () => {
                                     </div>
                                 </div>
 
-                                <div className='rounded-lg shadow-md border xs:p-4 xxs:p-2 w-fit xl:absolute xl:bottom-16 z-40 bg-white xl:right-24 xxs:absolute xxs:-bottom-[62rem] xxs:right-[1rem]'>
+                                <div className='rounded-lg shadow-md border xs:p-4 xxs:p-2 xs:w-64 xxs:w-fit xl:absolute xl:bottom-24 xl:right-24 lg:absolute lg:-bottom-20 lg:right-24 z-40 bg-white xxs:absolute xxs:-bottom-[62rem] xxs:right-[1rem] flex items-start justify-center flex-col text-start '>
 
-                                    <div className='text-[#61297F] xs:text-sm xxs:text-[8px] font-semibold'>
+                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold'>
                                         Cheaper Boat Ticket Fee
                                     </div>
                                     <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px]'>
