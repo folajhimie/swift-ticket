@@ -36,17 +36,17 @@ const TopBar = () => {
                             </button>
 
                         </div>
-                        <div className='flex justify-center flex-row items-center'>
+                        <div className='flex justify-center flex-row items-center mdl:justify-end mdl:items-center'>
                             <div className=" py-5 justify-center flex xl:relative z-10 xl:left-72 xxs:left-44 xxs:relative xl:bottom-60 w-fit xxs:bottom-44 lg:relative lg:left-72 lg:bottom-60 md:relative md:left-72 md:bottom-60 sm:relative sm:left-72 sm:bottom-60 xs:relative xs:left-72 xs:bottom-60">
                                 <img src={dots} alt="" />
                             </div>
 
                             <div className=''>
-                                <div className='rounded-lg shadow-md border xs:p-4 xxs:p-2 xs:w-64 xxs:w-fit xl:absolute xl:bottom-96 xl:left-[45rem] lg:absolute lg:left-[27rem] lg:bottom-60 xxs:absolute xxs:left-4 z-40 bg-white xs:absolute xs:bottom-96 xs:left-4 flex items-start justify-center flex-col text-start '>
-                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold'>
+                                <div className='rounded-lg shadow-md border xs:p-3 xxs:p-2 xl:w-64 lg:w-52 md:w-52 xxs:w-fit xl:absolute xl:bottom-96 xl:left-[45rem] lg:absolute lg:left-[34rem] md:left-80 md:bottom-[47rem] mdl:left-[2rem] mdl:bottom-[1rem] sm:left-80 sm:bottom-96  lg:bottom-60 xxs:absolute xxs:left-4 z-40 bg-white xs:absolute xs:bottom-96 xs:left-4 flex items-start justify-center flex-col text-start '>
+                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold xl:text-xs lg:text-[0.65rem] md:text-[0.65rem]'>
                                         Purchase boat tickets with ease
                                     </div>
-                                    <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px]'>
+                                    <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px] xl:text-xs lg:text-[9px] md:text-[9px]'>
                                         Get e-tickets for ferry pass within a few minutes 
                                     </div>
 
@@ -56,22 +56,22 @@ const TopBar = () => {
                                     <img src={iphone} alt="" />
                                 </div>
 
-                                <div className='rounded-lg shadow-md border xs:p-4 xxs:p-2 xs:w-64 xl:absolute xl:bottom-40 xl:left-[45rem] lg:absolute lg:left-[27rem] lg:bottom-0 z-40 bg-white xxs:absolute xxs:-bottom-32 xs:left-[45rem] xs:absolute xs:-bottom-[64rem] xxs:left-4 flex items-start justify-center flex-col text-start '>
+                                <div className='rounded-lg shadow-md border xs:p-3 xxs:p-2 xl:w-64 lg:w-52 md:w-52 xl:absolute xl:bottom-40 xl:left-[45rem] lg:absolute lg:left-[34rem] md:left-80 md:bottom-[30rem] sm:left-80 sm:bottom-40 lg:bottom-0 mdl:left-[2rem] mdl:-bottom-[17rem] z-40 bg-white xxs:absolute xxs:-bottom-32 xs:left-[45rem] xs:absolute xs:-bottom-[64rem] xxs:left-4 flex items-start justify-center flex-col text-start '>
 
-                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold'>
+                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold xl:text-xs lg:text-[0.65rem] md:text-[0.65rem]'>
                                         Smart Budgeting system
                                     </div>
-                                    <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px]'>
+                                    <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px] xl:text-xs lg:text-[9px] md:text-[9px]'>
                                         Budget easily using inbuilt AI tracker
                                     </div>
                                 </div>
 
-                                <div className='rounded-lg shadow-md border xs:p-4 xxs:p-2 xs:w-64 xxs:w-fit xl:absolute xl:bottom-24 xl:right-24 lg:absolute lg:-bottom-20 lg:right-24 z-40 bg-white xxs:absolute xxs:-bottom-[62rem] xxs:right-[1rem] flex items-start justify-center flex-col text-start '>
+                                <div className='rounded-lg shadow-md border xs:p-3 xxs:p-2 xl:w-64 lg:w-48 xxs:w-fit xl:absolute xl:bottom-24 xl:right-24 lg:absolute lg:-bottom-20 lg:right-4 md:bottom-[26rem] md:right-4 mdl:-bottom-[21rem] mdl:right-[15rem] z-40 bg-white xxs:absolute xxs:-bottom-[62rem] xxs:right-[1rem] flex items-start justify-center flex-col text-start '>
 
-                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold'>
+                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold xl:text-xs lg:text-[0.65rem]'>
                                         Cheaper Boat Ticket Fee
                                     </div>
-                                    <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px]'>
+                                    <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px] xl:text-xs lg:text-[9px]'>
                                         Save money through discounts
                                     </div>
                                 </div>
