@@ -37,12 +37,24 @@ const TopBar = () => {
 
                         </div>
                         <div className='flex md:justify-center md:flex-row md:items-center mdl:justify-end mdl:items-center'>
-                            <div className=" py-5 justify-center flex xl:relative z-10 xl:left-72 xxs:left-44 xxs:relative xl:bottom-60 w-fit xxs:bottom-44 lg:relative lg:left-72 lg:bottom-60 md:relative md:left-72 md:bottom-60 sm:relative sm:left-72 sm:bottom-60 xs:relative xs:left-72 xs:bottom-60">
+                            <div className=" py-5 justify-center flex xl:relative xl:z-10 lg:z-10 xl:left-[19rem] xl:bottom-[17rem] xxs:left-44 xxs:relative w-fit xxs:bottom-44 lg:relative lg:left-[19rem] lg:bottom-[17rem] md:relative md:left-72 md:bottom-60 sm:relative sm:left-72 sm:bottom-60 xs:relative xs:left-72 xs:bottom-60">
                                 <img src={dots} alt="" />
                             </div>
 
                             <div className=''>
-                                <div className='rounded-lg shadow-md border xs:p-3 xxs:p-2 xxs:w-36 xl:w-64 lg:w-52 md:w-52 mdl:w-60 xs:w-64  xl:absolute xl:bottom-96 xl:left-[43rem] xlg:bottom-[64rem] xlg:left-[26rem] lg:absolute lg:left-[34rem] md:left-80 md:bottom-[47rem] mdl:left-[2rem] mdl:bottom-[1rem] sm:left-80 sm:bottom-96  lg:bottom-60 xxs:absolute z-40 bg-white xs:absolute xs:-bottom-[16rem] xs:left-4 xxs:-bottom-[36rem] xxs:left-16  flex items-start justify-center flex-col text-start '>
+
+                                {/* <div className='rounded-lg shadow-md border xs:p-3 xxs:p-2 xxs:w-36 xl:w-64 lg:w-52 md:w-52 mdl:w-60 xs:w-64 xl:relative xl:bottom-96 xl:left-[43rem] lg:relative lg:left-[34rem] lg:bottom-60 md:left-80 md:bottom-[47rem] md:relative sm:left-80 sm:bottom-96 xs:relative xs:left-72 xs:bottom-60  z-40 bg-white flex items-start justify-center flex-col text-start '>
+                                    <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold xl:text-xs lg:text-[0.65rem] md:text-[0.65rem]'>
+                                        Purchase boat tickets with ease
+                                    </div>
+                                    <div className='text-zinc-900 xs:text-[11px] xxs:text-[5px] xl:text-xs lg:text-[9px] md:text-[9px]'>
+                                        Get e-tickets for ferry pass within a few minutes
+                                    </div>
+
+                                </div> */}
+
+
+                                <div className='rounded-lg shadow-md border xl:z-40 lg:z-40 xs:p-3 xxs:p-2 xxs:w-36 xl:w-64 lg:w-52 md:w-52 mdl:w-60 xs:w-64  xl:relative xl:-bottom-[11rem] xl:-left-[11rem] xlg:bottom-[64rem] xlg:left-[26rem] lg:relative lg:-left-[5rem] lg:-bottom-[10rem] md:relative md:left-80 md:bottom-[47rem] mdl:left-[2rem] mdl:bottom-[1rem] sm:relative sm:left-80 sm:bottom-96 xs:relative xs:left-80 xs:bottom-96 xxs:absolute  bg-white xxs:-bottom-[36rem] xxs:left-16  flex items-start justify-center flex-col text-start '>
                                     <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold xl:text-xs lg:text-[0.65rem] md:text-[0.65rem]'>
                                         Purchase boat tickets with ease
                                     </div>
@@ -52,11 +64,13 @@ const TopBar = () => {
 
                                 </div>
 
+
+
                                 <div className="py-1  justify-center flex relative z-30">
                                     <img src={iphone} alt="" />
                                 </div>
 
-                                <div className='rounded-lg shadow-md border xs:p-3 xxs:w-36 xxs:p-2 xl:w-64 lg:w-52 md:w-52 mdl:w-60 xs:w-64 xl:absolute xl:bottom-40 xl:left-[43rem] lg:absolute lg:left-[34rem] xlg:bottom-[46rem] xlg:left-[26rem] md:left-80 md:bottom-[30rem] sm:left-80 sm:bottom-40 lg:bottom-0 mdl:left-[2rem] mdl:-bottom-[17rem] z-40 bg-white xxs:absolute  xs:absolute xs:-bottom-[31rem] xs:left-4 xxs:-bottom-[46rem] xxs:left-16  flex items-start justify-center flex-col text-start '>
+                                <div className='rounded-lg shadow-md border xs:p-3 xxs:w-36 xxs:p-2 xl:w-64 lg:w-52 md:w-52 mdl:w-60 xs:w-64 xl:relative xl:bottom-[12rem] xl:-left-[11rem] lg:relative lg:-left-[5rem] lg:bottom-[13rem] md:relative md:left-80 md:bottom-[30rem] sm:relative sm:left-80 sm:bottom-40 xs:relative xs:left-80 xs:bottom-40 xlg:bottom-[46rem] xlg:left-[26rem]  mdl:left-[2rem] mdl:-bottom-[17rem] z-40 bg-white xxs:absolute xxs:-bottom-[46rem] xxs:left-16  flex items-start justify-center flex-col text-start '>
 
                                     <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold xl:text-xs lg:text-[0.65rem] md:text-[0.65rem] '>
                                         Smart Budgeting system
@@ -66,7 +80,7 @@ const TopBar = () => {
                                     </div>
                                 </div>
 
-                                <div className='rounded-lg shadow-md border xs:p-3 xxs:p-2 xxs:w-36 xl:w-64 lg:w-48  mdl:w-60 xs:w-64 xl:absolute xl:bottom-24 xl:right-16 lg:absolute lg:-bottom-20 lg:right-4 xlg:bottom-[41rem] xlg:right-[2rem] md:bottom-[26rem] md:right-4 mdl:-bottom-[21rem] mdl:right-[10rem] z-40 bg-white xxs:absolute xxs:-bottom-[48rem] xxs:right-[1rem] xs:-bottom-[37rem] xs:right-4 flex items-start justify-center flex-col text-start '>
+                                <div className='rounded-lg shadow-md border xs:p-3 xxs:p-2 xxs:w-36 xl:w-64 lg:w-48  mdl:w-60 xs:w-64 xl:relative xl:bottom-[11rem] xl:-right-[10rem] lg:relative lg:bottom-[12rem] lg:-right-[13rem] md:relative md:bottom-[26rem] md:right-4 sm:relative sm:-bottom-20 sm:right-4 xs:relative xs:-bottom-20 xs:right-4 xlg:bottom-[41rem] xlg:right-[2rem] mdl:-bottom-[21rem] mdl:right-[10rem] z-40 bg-white xxs:absolute xxs:-bottom-[48rem] xxs:right-[1rem]  flex items-start justify-center flex-col text-start '>
 
                                     <div className='text-[#61297F] xs:text-xs xxs:text-[8px] font-semibold xl:text-xs lg:text-[0.65rem]'>
                                         Cheaper Boat Ticket Fee
@@ -78,7 +92,7 @@ const TopBar = () => {
 
                             </div>
 
-                            <div className="w-fit justify-center flex xs:relative xs:right-80 xs:top-[17rem] sm:relative sm:right-80 sm:top-[17rem] md:relative md:right-80 md:top-[17rem] lg:relative lg:right-80 lg:top-[17rem] xl:relative z-10 xl:right-80 xl:top-[17rem] top xxs:top-40 xxs:right-48 xxs:relative">
+                            <div className="w-fit justify-center flex xs:relative xs:right-80 xs:top-[17rem] sm:relative sm:right-80 sm:top-[17rem] md:relative md:right-80 md:top-[17rem] lg:relative lg:right-[19rem] lg:top-[16rem] xl:relative z-10 xl:right-[19rem] xl:top-[16rem] top xxs:top-40 xxs:right-48 xxs:relative">
                                 <img src={square} alt="" />
                             </div>
                             {/* bg-red-500 py-5 justify-center flex xl:relative z-10 xl:left-72 xxs:left-52 xxs:relative xl:bottom-60 w-fit xxs:bottom-48 */}
