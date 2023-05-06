@@ -48,6 +48,8 @@ module.exports = {
       'mdl': '768px',
 
       'md': '820px',
+
+      'xlg': '912px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',
