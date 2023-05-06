@@ -3,37 +3,51 @@ import iphone from '../../assets/pictures/iPhone_12.png'
 
 import dots from '../../assets/svg/dots.svg';
 import square from '../../assets/svg/square.svg';
+import { SelectedPage } from '@/shared/types';
+import SecondaryButton from '../../shared/SecondaryButton';
+import ios from '../../assets/svg/black-ios.svg';
+import playStore from '../../assets/svg/play-store.svg'
 
-const TopBar = () => {
+type Props = {
+    selectedPage: SelectedPage;
+    setSelectedPage: (value: SelectedPage) => void
+}
+
+const TopBar = ({ setSelectedPage }: Props) => {
     return (
         <section id='trading' className="">
             <div className='bg-gradient-to-b from-[#FFFFFF] to-[#F4F9FF] py-20 px-6'>
                 <div className="container mx-auto">
                     <div className="grid md:grid-cols-2 justify-between">
-                        <div className=' max-w-lg'>
-                            <h2 className="font-bold text-4xl mb-6 leading-normal font-poppins">
-                                Advanced Job Hunting <span className="text-violet-gradient font-poppins">Tools</span>
+                        <div className=' max-w-lg flex justify-center items-center flex-col'>
+                            <h2 className="font-bold md:text-6xl xs:text-4xl leading-[4rem] mb-6 font-poppins">
+                                The Convenient  Way to Buy Ferry tickets.
 
                             </h2>
-                            <div className="mb-6 font-poppins">
-                                <h3 className='font-semibold text-xl mb-4 font-poppins'>Recruiters Do The Job Search For You</h3>
-                                <p className='text-gray-500 font-poppins'>A recruitment agency has access to a vast database of open positions, including those that are never announced or advertised on job boards or other locations. Access to those positions could be the difference in finding a job and finding the right job.</p>
-                            </div>
-                            <div className="mb-6">
-                                <h3 className='font-semibold text-xl mb-4'>Better Matches To Jobs And Companies</h3>
-                                <p className='text-gray-500 font-poppins'>Insights into a position, as well as a company’s culture, values, and expectations, may not always be available to a regular job applicant. Recruitment agencies put a great deal of effort into understanding both sides of a hire, since it is in their best interest to make a good match between both the candidate and the company. Putting candidates in a position to succeed benefits all three parties and can make sure the next job you land is the best one.</p>
-                            </div>
-                            <div className="mb-6">
+
+                            {/* <div className="mb-6">
                                 <h3 className='font-semibold text-xl mb-4'>Customer Support</h3>
                                 <p className='text-gray-500 font-poppins'>Premium 24/7 support available to all customers worldwide by phone or email. Dedicated account managers for partners.</p>
+                            </div> */}
+                            <div className='font-light text-[#353535] text-[16.5px] leading-[27.2px]'>
+                                SwiftTicket helps over 4 million customers provide a convenient and efficient ticket purchasing experience by helping them save and travel with ease.
                             </div>
-                            <div>
-                                Get Started
+                            <div className='my-8 flex flex-start w-full'>
+                                <SecondaryButton setSelectedPage={setSelectedPage}>
+                                    Create free account
+                                </SecondaryButton>
                             </div>
 
-                            <button className='py-4 px-10 text-primary underline'>
-                                Learn more
-                            </button>
+                            <div className='mt-7 flex justify-start w-full'>
+                                <div className='flex bg-transparent border rounded-lg p-2 mr-4'>
+                                    <img alt="" src={ios} className="text-[1px] w-4 h-4" />
+                                    <span className='text-xs mr-2 ml-2 text-zinc-800'>Get on iPhone</span>
+                                </div>
+                                <div className='flex bg-transparent border rounded-lg p-2'>
+                                    <img alt="" src={playStore} className="text-[1px] w-4 h-4" />
+                                    <span className='text-xs mr-2 ml-2 text-zinc-800'>Get on Android</span>
+                                </div>
+                            </div>
 
                         </div>
                         <div className='flex md:justify-center md:flex-row md:items-center mdl:justify-end mdl:items-center'>
@@ -54,12 +68,12 @@ const TopBar = () => {
                                 </div> */}
 
 
-                                <div className='rounded-lg shadow-md border z-40 xs:p-1 xxs:p-2 xxs:w-36 xl:w-64 lg:w-52 md:w-52 sm:w-48 xs:w-32  mdl:w-60 xl:relative xl:-bottom-[11rem] xl:-left-[11rem] xlg:bottom-[64rem] xlg:left-[26rem] lg:relative lg:-left-[5rem] lg:-bottom-[10rem] md:relative md:-left-[3rem] md:-bottom-[13rem] mdl:left-[2rem] mdl:bottom-[1rem] sm:relative sm:left-[20rem] sm:bottom-[24rem] xs:relative xs:-left-[2rem] xs:-bottom-[6rem] xxs:absolute  bg-white xxs:-bottom-[36rem] xxs:left-16  flex items-start justify-center flex-col text-start '>
+                                <div className='rounded-lg shadow-md border z-40 xs:p-1 xl:p-2 xxs:p-2 xxs:w-36 xl:w-64 lg:w-52 md:w-52 sm:w-48 xs:w-32  mdl:w-60 xl:relative xl:-bottom-[11rem] xl:-left-[11rem] xlg:bottom-[64rem] xlg:left-[26rem] lg:relative lg:-left-[5rem] lg:-bottom-[10rem] md:relative md:-left-[3rem] md:-bottom-[13rem] mdl:left-[2rem] mdl:bottom-[1rem] sm:relative sm:left-[20rem] sm:bottom-[24rem] xs:relative xs:-left-[2rem] xs:-bottom-[6rem] xxs:absolute  bg-white xxs:-bottom-[36rem] xxs:left-16  flex items-start justify-center flex-col text-start '>
                                     <div className='text-[#61297F] xs:text-xs font-semibold xl:text-[0.75rem] md:text-[0.65rem] sm:text-[0.55rem] xs:text-[0.45rem]'>
                                         Purchase boat tickets with ease
                                     </div>
                                     <div className='text-zinc-900 xxs:text-[5px] xl:text-xs lg:text-[9px] md:text-[0.65rem] sm:text-[0.45rem] xs:text-[0.35rem]'>
-                                        Get e-tickets for ferry pass within a few minutes 
+                                        Get e-tickets for ferry pass within a few minutes
                                     </div>
 
                                 </div>
@@ -70,7 +84,7 @@ const TopBar = () => {
                                     <img src={iphone} alt="" />
                                 </div>
 
-                                <div className='rounded-lg shadow-md border xs:p-2 xxs:w-36 xxs:p-2 xl:w-64 lg:w-52 md:w-52 mdl:w-60 sm:w-48 xs:w-32 xl:relative xl:bottom-[12rem] xl:-left-[11rem] lg:relative lg:-left-[5rem] lg:bottom-[13rem] md:relative md:-left-[3rem] md:bottom-[13rem] sm:relative sm:left-80 sm:bottom-40 xs:relative xs:-left-[2rem] xs:bottom-[9rem] xlg:bottom-[46rem] xlg:left-[26rem]  mdl:left-[2rem] mdl:-bottom-[17rem] z-40 bg-white xxs:absolute xxs:-bottom-[46rem] xxs:left-16  flex items-start justify-center flex-col text-start '>
+                                <div className='rounded-lg shadow-md border xs:p-2 xl:p-2 xxs:w-36 xxs:p-2 xl:w-64 lg:w-52 md:w-52 mdl:w-60 sm:w-48 xs:w-32 xl:relative xl:bottom-[12rem] xl:-left-[11rem] lg:relative lg:-left-[5rem] lg:bottom-[13rem] md:relative md:-left-[3rem] md:bottom-[13rem] sm:relative sm:left-80 sm:bottom-40 xs:relative xs:-left-[2rem] xs:bottom-[9rem] xlg:bottom-[46rem] xlg:left-[26rem]  mdl:left-[2rem] mdl:-bottom-[17rem] z-40 bg-white xxs:absolute xxs:-bottom-[46rem] xxs:left-16  flex items-start justify-center flex-col text-start '>
 
                                     <div className='text-[#61297F] xs:text-xs font-semibold xl:text-[0.75rem] md:text-[0.65rem] sm:text-[0.55rem] xs:text-[0.45rem]'>
                                         Smart Budgeting system
@@ -80,7 +94,7 @@ const TopBar = () => {
                                     </div>
                                 </div>
 
-                                <div className='rounded-lg shadow-md border xs:p-2 xxs:p-2 xxs:w-36 xl:w-64 lg:w-48 md:w-52 mdl:w-60 sm:w-48 xs:w-32 xl:relative xl:bottom-[11rem] xl:-right-[10rem] lg:relative lg:bottom-[12rem] lg:-right-[13rem] md:relative md:bottom-[11rem] md:-right-[7rem] sm:relative sm:-bottom-20 sm:right-4 xs:relative xs:bottom-[8rem] xs:-right-[6rem] xlg:bottom-[41rem] xlg:right-[2rem] mdl:-bottom-[21rem] mdl:right-[10rem] z-40 bg-white xxs:absolute xxs:-bottom-[48rem] xxs:right-[1rem]  flex items-start justify-center flex-col text-start '>
+                                <div className='rounded-lg shadow-md border xs:p-2 xl:p-2 xxs:p-2 xxs:w-36 xl:w-64 lg:w-48 md:w-52 mdl:w-60 sm:w-48 xs:w-32 xl:relative xl:bottom-[11rem] xl:-right-[10rem] lg:relative lg:bottom-[12rem] lg:-right-[13rem] md:relative md:bottom-[11rem] md:-right-[7rem] sm:relative sm:-bottom-20 sm:right-4 xs:relative xs:bottom-[8rem] xs:-right-[6rem] xlg:bottom-[41rem] xlg:right-[2rem] mdl:-bottom-[21rem] mdl:right-[10rem] z-40 bg-white xxs:absolute xxs:-bottom-[48rem] xxs:right-[1rem]  flex items-start justify-center flex-col text-start '>
 
                                     <div className='text-[#61297F] xs:text-xs font-semibold xl:text-[0.75rem] md:text-[0.65rem] sm:text-[0.55rem] xs:text-[0.45rem]'>
                                         Cheaper Boat Ticket Fee

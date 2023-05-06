@@ -106,7 +106,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                     >
                                         <div className="flex">
                                             <Linking
-                                                page="Home"
+                                                page="Buy Tickets"
                                                 selectedPage={selectedPage}
                                                 setSelectedPage={setSelectedPage}
                                                 toggle={true}
@@ -132,7 +132,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                     <div className="mr-3">
                                         <div className="flex">
                                             <Linking
-                                                page="Tickets"
+                                                page="Fare Prices"
                                                 selectedPage={selectedPage}
                                                 setSelectedPage={setSelectedPage}
                                                 toggle={false}
@@ -148,7 +148,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                     >
                                         <div className="flex">
                                             <Linking
-                                                page="Fare Prices"
+                                                page="Stories"
                                                 selectedPage={selectedPage}
                                                 setSelectedPage={setSelectedPage}
                                                 toggle={true}
@@ -173,6 +173,21 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                         >
                                             <Linking
                                                 page="FAQs"
+                                                selectedPage={selectedPage}
+                                                setSelectedPage={setSelectedPage}
+                                                toggle={false}
+                                            />
+                                        </div>
+
+                                    </div>
+
+                                    <div className="mr-3">
+                                        <div
+                                            className="flex"
+                                            onClick={handleClick}
+                                        >
+                                            <Linking
+                                                page="Resources"
                                                 selectedPage={selectedPage}
                                                 setSelectedPage={setSelectedPage}
                                                 toggle={false}
@@ -219,29 +234,36 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     {/* MENU ITEMS */}
                     <div className="ml-[33%] flex flex-col gap-10 text-2xl">
                         <Linking
-                            page="Home"
+                            page="Buy Tickets"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             toggle={false}
                         />
                         <Linking
-                            page="Products"
+                            page="Fare Prices"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             toggle={false}
                         />
                         <Linking
-                            page="Company"
+                            page="Stories"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             toggle={false}
                         />
                         <Linking
-                            page="Contact Us"
+                            page="FAQs"
                             selectedPage={selectedPage}
                             setSelectedPage={setSelectedPage}
                             toggle={false}
                         />
+                        <Linking
+                            page="Resources"
+                            selectedPage={selectedPage}
+                            setSelectedPage={setSelectedPage}
+                            toggle={false}
+                        />
+                        
                     </div>
                 </div>
             )}

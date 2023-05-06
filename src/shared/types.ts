@@ -5,6 +5,14 @@ export enum SelectedPage {
   ContactUs = "faqs",
 }
 
+export enum SelectedTabs {
+  BuyTickets = "home",
+  FarePrices = "fareprices",
+  Stories = "stories",
+  Faqs = "faqs",
+  Resources = "resources",
+}
+
 export interface BenefitType {
   icon: JSX.Element;
   title: string;
