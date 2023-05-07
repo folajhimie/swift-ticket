@@ -1,4 +1,3 @@
-import React from 'react'
 import iphone from '../../assets/pictures/iPhone_12.png'
 
 import dots from '../../assets/svg/dots.svg';
@@ -38,12 +37,12 @@ const TopBar = ({ setSelectedPage }: Props) => {
                                 </SecondaryButton>
                             </div>
 
-                            <div className='mt-7 flex justify-start w-full'>
-                                <div className='flex bg-transparent border rounded-lg p-2 mr-4'>
+                            <div className='mt-7 flex flex-row justify-start w-full'>
+                                <div className='flex bg-transparent border rounded-lg p-2 mr-4 w-fit '>
                                     <img alt="" src={ios} className="text-[1px] w-4 h-4" />
                                     <span className='text-xs mr-2 ml-2 text-zinc-800'>Get on iPhone</span>
                                 </div>
-                                <div className='flex bg-transparent border rounded-lg p-2'>
+                                <div className='flex bg-transparent border rounded-lg p-2 w-fit'>
                                     <img alt="" src={playStore} className="text-[1px] w-4 h-4" />
                                     <span className='text-xs mr-2 ml-2 text-zinc-800'>Get on Android</span>
                                 </div>
@@ -94,7 +93,7 @@ const TopBar = ({ setSelectedPage }: Props) => {
                                     </div>
                                 </div>
 
-                                <div className='rounded-lg shadow-md border xs:p-2 xl:p-2 xxs:p-2 xxs:w-36 xl:w-64 lg:w-48 md:w-52 mdl:w-60 sm:w-48 xs:w-32 xl:relative xl:bottom-[11rem] xl:-right-[10rem] lg:relative lg:bottom-[12rem] lg:-right-[13rem] md:relative md:bottom-[11rem] md:-right-[7rem] sm:relative sm:-bottom-20 sm:right-4 xs:relative xs:bottom-[8rem] xs:-right-[6rem] xlg:bottom-[41rem] xlg:right-[2rem] mdl:-bottom-[21rem] mdl:right-[10rem] z-40 bg-white xxs:absolute xxs:-bottom-[48rem] xxs:right-[1rem]  flex items-start justify-center flex-col text-start '>
+                                <div className='rounded-lg shadow-md border xs:p-2 xl:p-2 xxs:p-2 xxs:w-36 xl:w-64 lg:w-48 md:w-52 mdl:w-60 sm:w-48 xs:w-32 xl:relative xl:bottom-[11rem] xl:-right-[10rem] lg:relative lg:bottom-[12rem] lg:-right-[13rem] md:relative md:bottom-[11rem] md:-right-[7rem] sm:relative sm:-bottom-20 sm:right-4 xs:relative xs:bottom-[8rem] xs:-right-[4rem] xlg:bottom-[41rem] xlg:right-[2rem] mdl:-bottom-[21rem] mdl:right-[10rem] z-40 bg-white xxs:absolute xxs:-bottom-[48rem] xxs:right-[1rem]  flex items-start justify-center flex-col text-start '>
 
                                     <div className='text-[#61297F] xs:text-xs font-semibold xl:text-[0.75rem] md:text-[0.65rem] sm:text-[0.55rem] xs:text-[0.45rem]'>
                                         Cheaper Boat Ticket Fee

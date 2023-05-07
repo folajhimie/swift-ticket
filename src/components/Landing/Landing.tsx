@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import TopBar from './TopBar';
+import Savings from './Savings';
 import { SelectedPage } from '@/shared/types';
+import MiddleBar from './MiddleBar'
 
 
 
@@ -16,7 +18,10 @@ const Landing = () => {
         <div>
             <TopBar
             selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}/>
+            setSelectedPage={setSelectedPage}
+            />
+            <Savings/>
+            <MiddleBar/>
 
         </div>
     )
