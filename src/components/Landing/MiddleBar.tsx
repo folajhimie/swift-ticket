@@ -1,6 +1,7 @@
 
-import iphone from '../../assets/pictures/iPhone_13.png'
-import divCol from '../../assets/pictures/col-xs-12.png'
+import iphone from '../../assets/pictures/iPhone_13.png';
+// import divCol from '../../assets/pictures/col-xs-12.png';
+import all from '../../assets/svg/all.svg'
 
 
 
@@ -22,7 +23,7 @@ const MiddleBar = () => {
                         <div className='flex md:justify-center md:flex-row md:items-center mdl:justify-end mdl:items-center'>
                             <div className=''>
                                 <div className="py-1  justify-center flex relative z-30">
-                                    <img src={divCol} alt="" />
+                                    <img src={all} alt="" />
                                 </div>
                             </div>
                         </div>

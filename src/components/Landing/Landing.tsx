@@ -2,7 +2,8 @@ import { useState } from 'react';
 import TopBar from './TopBar';
 import Savings from './Savings';
 import { SelectedPage } from '@/shared/types';
-import MiddleBar from './MiddleBar'
+import MiddleBar from './MiddleBar';
+import Sponsor from './sponsor';
 
 
 
@@ -22,6 +23,7 @@ const Landing = () => {
             />
             <Savings/>
             <MiddleBar/>
+            <Sponsor/>
 
         </div>
     )
