@@ -191,7 +191,7 @@ const Ferry = () => {
           />
 
         )}
-        <div className='absolute z-50 top-80 text-3xl text-red-800 font-semibold bg-amber-600 w-full h-10'>{countNumber} hello {progress} Hiding {lastCount}</div>
+        {/* <div className='absolute z-50 top-80 text-3xl text-red-800 font-semibold bg-amber-600 w-full h-10'>{countNumber} hello {progress} Hiding {lastCount}</div> */}
 
         {(progress === 100 && count === 100) && (
           <div>

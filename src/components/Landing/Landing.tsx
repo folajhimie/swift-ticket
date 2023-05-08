@@ -4,6 +4,7 @@ import Savings from './Savings';
 import { SelectedPage } from '@/shared/types';
 import MiddleBar from './MiddleBar';
 import Sponsor from './sponsor';
+import Footer from './Footer'
 
 
 
@@ -24,6 +25,7 @@ const Landing = () => {
             <Savings/>
             <MiddleBar/>
             <Sponsor/>
+            <Footer/>
 
         </div>
     )
