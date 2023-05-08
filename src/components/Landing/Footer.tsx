@@ -10,19 +10,7 @@ const Footer = () => {
             <div className="container px-2 py-6">
                 <div className="grid lg:grid-cols-5 xl:grid-cols-5">
                     <div className="flex items-center">
-                        
-                        {/* <img src={logo} className="mr-10" alt="Jobber" /> */}
-                        {/* <div className="flex justify-center w-full ">
-                  <div
-                    className="m-1"
-                    style={{ width: "30px", height: "30px" }}
-                  >
-    
-                    <img src={JobberLogo} alt="jobber" width="80px" height="80px" />
-    
-                  </div>
-                  <span className="mt-1 mr-6"><img src={Icon} alt="jobber" width="140px" height="140px" /></span>
-                </div> */}
+
                     </div>
                     <div className="text-start p-6 xl:flex md:justify-between">
                         <ul className=''>
@@ -105,10 +93,17 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text-center py-6">
-                <p className="text-gray-500 font-poppins">© Copyright {new Date().getFullYear()} JOBBER LLC. All rights reserved</p>
-                <small className='text-gray-500 font-poppins'>
-                    Design by Folajimi Henry
-                </small>
+                <div className="font-poppins text-sm text-center w-full flex justify-center my-2">
+                    <div className=' text-gray-900 font-poppins text-sm text-center w-1/2 py-2'>
+                        Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 6 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.
+                    </div>
+                </div>
+
+                <div className="font-poppins text-sm text-center w-full  flex justify-center m-1">
+                    <div className=' text-gray-900 font-poppins text-sm text-center w-1/2 py-2'>
+                        2016 - 2022 PiggyTech Global Limited - RC 1405222
+                    </div>
+                </div>
             </div>
         </div>
     );
