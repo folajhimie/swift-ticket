@@ -14,6 +14,10 @@ import LayoutItem from "./components/Landing/LayoutItem";
 import Landing from "./components/Landing/Landing";
 // import Square from './components/Navbar/Square';
 // import Resources from './components/Navbar/Resources/Index'
+import Register from "./page/register/Register";
+import SignIn from "./page/sign-in/SignIn";
+
+
 
 function App() {
 
@@ -37,6 +41,14 @@ function App() {
             />
             {/* <Route path="tasks" element={<Ferry />} /> */}
           </Route>
+          <Route
+            path="/auth/signin"
+            element={<SignIn/>}
+          />
+          <Route
+            path="/auth/register"
+            element={<Register/>}
+          />
         </Routes>
 
         {/* <Routes>

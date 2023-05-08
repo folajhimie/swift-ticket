@@ -3,6 +3,8 @@ export enum SelectedPage {
   Products = "tickets",
   Company = "fareprices",
   ContactUs = "faqs",
+  Register = "register",
+  SignUp = "signUp"
 }
 
 export enum SelectedTabs {

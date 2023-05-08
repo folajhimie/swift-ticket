@@ -9,7 +9,8 @@ import useMediaQuery from "@/hooks/useMediaQuery";
 import SecondaryButton from "@/shared/SecondaryButton";
 import PrimaryButton from "@/shared/PrimaryButton";
 import Square from "../../components/Navbar/Square";
-import Resources from '../../components/Navbar/Resources/Index'
+import Resources from '../../components/Navbar/Resources/Index';
+import { Link } from "react-router-dom";
 
 // import { TiLocationArrow } from "react-icons/ti";
 
@@ -93,7 +94,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                         <div className="font-[500] text-white">
                             SwiftTicket
                         </div>
-                        
+
 
                         {/* RIGHT SIDE  */}
 
@@ -183,12 +184,16 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
                                 </div>
                                 <div className=" flex items-center justify-center xl:w-5/6 lg:w-5/6">
-                                    <PrimaryButton setSelectedPage={setSelectedPage}>
-                                        Sign in
-                                    </PrimaryButton>
-                                    <SecondaryButton setSelectedPage={setSelectedPage}>
-                                        Create free account
-                                    </SecondaryButton>
+                                    <Link className="link flex items-center" to="/auth/signin">
+                                        <PrimaryButton>
+                                            Sign in
+                                        </PrimaryButton>
+                                    </Link>
+                                    <Link className="link flex items-center" to="/auth/register">
+                                        <SecondaryButton>
+                                            Create free account
+                                        </SecondaryButton>
+                                    </Link>
                                 </div>
                             </div>
 

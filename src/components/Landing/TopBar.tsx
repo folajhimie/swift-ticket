@@ -2,17 +2,17 @@ import iphone from '../../assets/pictures/iPhone_12.png'
 
 import dots from '../../assets/svg/dots.svg';
 import square from '../../assets/svg/square.svg';
-import { SelectedPage } from '@/shared/types';
+// import { SelectedPage } from '@/shared/types';
 import SecondaryButton from '../../shared/SecondaryButton';
 import ios from '../../assets/svg/black-ios.svg';
 import playStore from '../../assets/svg/play-store.svg'
 
-type Props = {
-    selectedPage: SelectedPage;
-    setSelectedPage: (value: SelectedPage) => void
-}
+// type Props = {
+//     selectedPage: SelectedPage;
+//     setSelectedPage: (value: SelectedPage) => void
+// }
 
-const TopBar = ({ setSelectedPage }: Props) => {
+const TopBar = () => {
     return (
         <section id='trading' className="">
             <div className='bg-gradient-to-b from-[#FFFFFF] to-[#F4F9FF] py-20 px-6'>
@@ -32,7 +32,7 @@ const TopBar = ({ setSelectedPage }: Props) => {
                                 SwiftTicket helps over 4 million customers provide a convenient and efficient ticket purchasing experience by helping them save and travel with ease.
                             </div>
                             <div className='my-8 flex flex-start w-full'>
-                                <SecondaryButton setSelectedPage={setSelectedPage}>
+                                <SecondaryButton>
                                     Create free account
                                 </SecondaryButton>
                             </div>

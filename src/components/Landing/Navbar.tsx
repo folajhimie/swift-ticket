@@ -4,6 +4,7 @@ import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 // import { Slide } from "react-awesome-reveal";
 // import Link from "./Link";
 import Linking from "./Link";
+import { Link } from "react-router-dom";
 import { SelectedPage } from "../../shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import SecondaryButton from "@/shared/SecondaryButton";
@@ -93,7 +94,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                         <div className="font-[500] text-zinc-800">
                             SwiftTicket
                         </div>
-                        
+
 
                         {/* RIGHT SIDE  */}
 
@@ -198,12 +199,16 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
                                 </div>
                                 <div className=" flex items-center justify-center xl:w-5/6 lg:w-5/6">
-                                    <PrimaryButton setSelectedPage={setSelectedPage}>
-                                        Sign in
-                                    </PrimaryButton>
-                                    <SecondaryButton setSelectedPage={setSelectedPage}>
-                                        Create free account
-                                    </SecondaryButton>
+                                    <Link className="flex items-center" to="/auth/signin">
+                                        <PrimaryButton>
+                                            Sign in
+                                        </PrimaryButton>
+                                    </Link>
+                                    <Link className="flex items-center" to="/auth/register">
+                                        <SecondaryButton>
+                                            Create free account
+                                        </SecondaryButton>
+                                    </Link>
                                 </div>
                             </div>
 
@@ -263,7 +268,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                             setSelectedPage={setSelectedPage}
                             toggle={false}
                         />
-                        
+
                     </div>
                 </div>
             )}
