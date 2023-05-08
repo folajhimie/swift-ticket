@@ -6,13 +6,13 @@ import twitter from '../../assets/svg/twitter.svg'
 
 const Footer = () => {
     return (
-        <div id='footer' className='bg-white'>
-            <div className="container px-2 py-6">
+        <div className='bg-white'>
+            <div className="px-2 py-6">
                 <div className="grid lg:grid-cols-5 xl:grid-cols-5">
                     <div className="flex items-center">
 
                     </div>
-                    <div className="text-start p-6 xl:flex md:justify-between">
+                    <div className="text-center p-6 xl:flex md:justify-center bg-lime-500">
                         <ul className=''>
 
                             <li className='mb-4'>
@@ -35,7 +35,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='text-start p-6 xl:flex md:justify-center '>
+                    <div className='text-center p-6 xl:flex md:justify-center bg-orange-500'>
                         <ul>
                             {/* <h2 className='font-poppins font-semibold mb-6 text-xl'> Support </h2> */}
 
@@ -53,8 +53,8 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className='text-start p-6 xl:flex md:justify-center'>
-                        <ul className='flex flex-col justify-start items-start'>
+                    <div className='text-center p-6 xl:flex md:justify-center bg-red-500 '>
+                        <ul>
                             {/* <h2 className='font-poppins font-semibold mb-6 text-xl'>Contact Us</h2> */}
 
                             <li className='mb-4'>
@@ -71,7 +71,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="p-2 w-full lg:col-span-3 xl:col-auto mt-5">
+                    <div className="text-center p-6 xl:flex md:justify-center flex-col mt-5 bg-cyan-600 ">
                         {/* <span className='text-gray-500 font-poppins'>Newsletter</span> */}
                         <div className='mr-3 flex items-center justify-end' >
                             {/* <div className='text-white mr-2 text-[10px]'>Return-trip</div> */}
