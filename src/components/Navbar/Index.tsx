@@ -91,9 +91,16 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     <div className="flex items-center justify-between w-full ">
                         {/* LEFT SIDE  */}
                         {/* <img alt="logo" src={Logo} className="mr-5" /> */}
-                        <div className="font-[500] text-white">
-                            SwiftTicket
-                        </div>
+                        <span className="">
+                            <Link
+                                to="/"
+                            >
+                                <div className="font-[500] text-zinc-800">
+                                    SwiftTicket
+                                </div>
+                                
+                            </Link>
+                        </span>
 
 
                         {/* RIGHT SIDE  */}
