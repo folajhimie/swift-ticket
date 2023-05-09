@@ -5,36 +5,6 @@ import { Link } from "react-router-dom";
 
 const SignUp = () => {
 
-  // const navigate = useNavigate();
-  // const dispatch = useDispatch();
-  // const [login, { isLoading }] = useLoginMutation();
-
-
-
-  // const emailInput = useRef();
-
-  // create a ref for the password input field
-
-
-  // var { password, email } = userData;
-
-  // const isInvalid = password === "" || email === "";
-
-
-  // useEffect(() => {
-  //   emailInput.current.focus();
-  //   passwordInput.current.focus();
-  // }, []);
-
-
-
-
-
-
-
-
-
-
   return (
     <section className="">
       <div className='bg-[#F4F7FA] h-screen'>
@@ -52,8 +22,6 @@ const SignUp = () => {
           <div className="flex bg-[#F4F7FA] md:flex-1 min-h-screen flex-col w-full  justify-center items-center relative z-50">
             <div className="flex  items-center justify-center h-screen  w-full">
               <div className="w-full flex flex-col p-5 max-w-lg">
-
-
                 <form
                   className="border rounded-sm p-7 shadow-lg bg-white  w-full flex-1 mt-4"
                   method="POST"
@@ -105,8 +73,13 @@ const SignUp = () => {
                       <span className="text-xs text-[#b8c3d2]">
                         New user?
                       </span>
-                      <span className="text-[#61297F] text-xs ml-2">
-                        Create account
+                      <span className="">
+                        <Link
+                          to="/auth/register"
+                          className="text-xs font-medium text-[#61297F] my-6 ml-2"
+                        >
+                          Create account
+                        </Link>
                       </span>
                     </div>
 
@@ -138,13 +111,9 @@ const SignUp = () => {
 
               </div>
             </div>
-
-
           </div>
-
         </div>
       </div>
-
     </section>
   );
 }

@@ -16,6 +16,7 @@ import Landing from "./components/Landing/Landing";
 // import Resources from './components/Navbar/Resources/Index'
 import Register from "./page/register/Register";
 import SignIn from "./page/sign-in/SignIn";
+import ForgotPassword from "./page/ForgotPassword/ForgotPassword";
 
 
 
@@ -48,6 +49,10 @@ function App() {
           <Route
             path="/auth/register"
             element={<Register/>}
+          />
+          <Route
+            path="/auth/forgot-password"
+            element={<ForgotPassword/>}
           />
         </Routes>
 
