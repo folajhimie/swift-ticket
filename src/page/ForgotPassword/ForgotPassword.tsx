@@ -82,6 +82,8 @@ const ForgotPassword = () => {
                                             Privacy | Terms
                                         </span>
                                     </div>
+                                    {/* <div></div> */}
+                                    {/* <div></div> */}
                                 </div>
 
                             </div>
