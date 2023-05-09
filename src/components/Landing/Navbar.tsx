@@ -221,10 +221,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
                         ) : (
                             <button
-                                className="rounded-full bg-secondary-500 p-2"
+                                className="rounded-lg p-2 bg-[#f2f7ff]"
                                 onClick={() => setIsMenuToggled(!isMenuToggled)}
                             >
-                                <HiOutlineMenu className="h-6 w-6 text-white" />
+                                <HiOutlineMenu className="h-6 w-6 text-[#61297F]" />
                             </button>
                         )}
 
@@ -235,11 +235,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
             </div>
 
             {!isAboveMediumScreens && isMenuToggled && (
-                <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-primary-100 drop-shadow-xl">
+                <div className="fixed right-0 bottom-0 z-40 h-full w-[300px] bg-[#f2f7ff] drop-shadow-xl">
                     {/* CLOSE ICON */}
                     <div className="flex justify-end p-12">
                         <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                            <HiOutlineX className="h-6 w-6 text-gray-400" />
+                            <HiOutlineX className="h-6 w-6 text-[#61297F]" />
                         </button>
                     </div>
 
