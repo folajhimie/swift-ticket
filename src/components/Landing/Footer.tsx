@@ -94,7 +94,7 @@ const Footer = () => {
             </div>
             <div className="text-center py-6">
                 <div className="font-poppins text-sm text-center w-full flex justify-center my-2">
-                    <div className=' text-gray-900 font-poppins text-sm text-center w-1/2 py-2'>
+                    <div className=' text-gray-900 font-poppins text-sm text-center md:w-[70%] xs:w-full py-2'>
                         Piggyvest (formerly piggybank.ng) is the leading online savings & investing platform in Nigeria. For over 6 years, our customers have saved and invested billions of Naira that they would normally be tempted to spend.
                     </div>
                 </div>

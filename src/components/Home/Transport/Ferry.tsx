@@ -7,7 +7,7 @@ import bus from '../../../assets/bus.png';
 
 
 let countNumber: number;
-let lastCount: number;
+// let lastCount: number;
 
 
 
