@@ -37,7 +37,7 @@ const Modal = () => {
                 </div> */}
             </div>
             <div className=''>
-                <div className='flex md:flex-row xs:flex-col mr-3 items-center justify-center text-sm font-semibold md:p-[24px] xs:p-[14px] bg-[#949494] rounded-lg'>
+                <div className='p-4 flex md:flex-row xs:flex-col mr-3 items-center justify-center text-sm font-semibold md:p-[24px] xs:p-[9px] bg-[#949494] rounded-lg'>
                     <div className='xs:mr-0 md:mr-3 grid md:grid-cols-4 xs:grid-cols-1 items-center justify-center text-sm font-semibold p-[8px] bg-white rounded-lg'>
                         <div className='flex pl-7 justify-center items-center xs:mb-3 md:mb-0'>
                             <div>
@@ -97,7 +97,7 @@ const Modal = () => {
                             <div>
                                 <div className='flex'>
                                     <div className='ml-7 mr-5 flex flex-col items-center justify-center'>
-                                        <img alt="" src={person} className="text-[1px] w-4 h-4" />
+                                        <img alt="" src={person} className="text-[1px] md:w-4 md:h-4 xs:w-4 xs:h-4" />
                                     </div>
                                     <div className='mr-7 '>
                                         <div className='font-light md:text-xs xs:text-[8px]'>
@@ -108,7 +108,7 @@ const Modal = () => {
                                         </div>
                                     </div>
                                     <div className='ml-7 mr-7 flex flex-col items-center justify-center'>
-                                        <img alt="" src={arrowDown} className="text-[1px] w-2 h-2" />
+                                        <img alt="" src={arrowDown} className="text-[1px] md:w-4 md:h-4 xs:w-2 xs:h-2" />
                                     </div>
                                 </div>
                             </div>

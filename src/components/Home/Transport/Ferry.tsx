@@ -226,32 +226,32 @@ const Ferry = () => {
 
       </div>
       <span
-        className='text-center tracking-wide text-white lg:text-[30px] sm:text-[30px] leading-[20px] absolute z-30 w-full items-center justify-center text-lg font-bold top-1/4'
+        className='text-center tracking-wide text-white lg:text-[30px] sm:text-[30px] leading-[20px] absolute z-20 w-full items-center justify-center text-lg font-bold md:top-1/4 xs:top-[25%]'
       >
         The Convenient Way to Buy <span className='underline inline mx-0'>Ferry</span> tickets.
       </span>
 
-      <div className='absolute z-30 top-[40%] text-lg w-full items-center justify-center flex'>
+      <div className='absolute z-20 md:top-[40%] xs:top-[30%] text-lg w-full items-center justify-center flex'>
         <Modal />
       </div>
 
       {/* <button onClick={handleButtonClick}>Start Progress</button> */}
 
-      <div className='bottom-0 absolute z-30 text-lg w-full flex justify-end -left-5'>
+      <div className='bottom-0 absolute z-20 text-lg w-full flex justify-end -left-5'>
         <div className='flex bg-[#61297F]'>
 
           <div className='flex flex-col justify-around  text-white'>
             {/* <div className="progress-bar w-full"></div> */}
             <progress id="file" value={progress} max="100" className='progress-loading w-full'></progress>
-            <div className='flex md:py-7 xs:py-2 pr-7'>
+            <div className='flex md:py-5 xs:py-2 md:px-7 xs:px-3'>
               <div className='mr-3 flex flex-col items-center justify-center'>
                 {/* <div className='text-3xl text-gray-300'>01{progress}</div> */}
               </div>
               <div>
-                <div className='font-semibold md:text-sm xs:text-[8px]'>
+                <div className='font-semibold md:text-sm xs:text-[5px]'>
                   Ferry Transport
                 </div>
-                <div className='font-light md:text-[10px] xs:text-[6px]'>
+                <div className='font-light md:text-[10px] xs:text-[4px]'>
                   Get Online Tickets
                 </div>
               </div>
@@ -262,15 +262,15 @@ const Ferry = () => {
           <div className='flex flex-col justify-around text-white'>
             {/* <div className="progress-bar w-full"></div> */}
             <progress id="file" value={count} max="100" className='progress-loading w-full'></progress>
-            <div className='flex md:py-7 xs:py-2 pr-7'>
-              <div className='pl-7 border-l-2 mr-3 flex flex-col items-center justify-center'>
+            <div className='flex md:py-5 xs:py-2 pr-7'>
+              <div className='md:pl-7 xs:-pl-[.25rem] border-l-[1px] mr-3 flex flex-col items-center justify-center'>
                 {/* <div className='text-3xl text-gray-300'>02{count}</div> */}
               </div>
               <div>
-                <div className='font-semibold md:text-sm xs:text-[8px]'>
+                <div className='font-semibold md:text-sm xs:text-[5px]'>
                   Train Transport
                 </div>
-                <div className='font-light md:text-[10px] xs:text-[6px]'>
+                <div className='font-light md:text-[10px] xs:text-[4px]'>
                   Get Online Tickets
                 </div>
               </div>
@@ -281,15 +281,15 @@ const Ferry = () => {
           <div className='flex flex-col justify-around text-white'>
             {/* <div className="progress-bar w-full"></div> */}
             <progress id="file" value={bar} max="100" className='progress-loading w-full'></progress>
-            <div className='flex md:py-7 xs:py-2 pr-7'>
-              <div className='pl-7 border-l-2 mr-3 flex flex-col items-center justify-center'>
+            <div className='flex md:py-5 xs:py-2 pr-7'>
+              <div className='md:pl-7 xs:-pl-[.25rem] border-l-[1px] mr-3 flex flex-col items-center justify-center'>
                 {/* <div className='text-3xl text-gray-300'>03{bar}</div> */}
               </div>
               <div className=''>
-                <div className='font-semibold md:text-sm xs:text-[8px]'>
+                <div className='font-semibold md:text-sm xs:text-[5px]'>
                   BRT Transport
                 </div>
-                <div className='font-light md:text-[10px] xs:text-[6px]'>
+                <div className='font-light md:text-[10px] xs:text-[4px]'>
                   Get Online Tickets
                 </div>
               </div>
