@@ -18,7 +18,7 @@ const Register = () => {
                         </div>
                     </div>
                     <div className="flex bg-[#F4F7FA] md:flex-1 min-h-screen flex-col w-full  justify-center items-center relative z-50">
-                        <div className="flex  items-center justify-center h-screen  w-full">
+                        <div className="flex items-center justify-center h-screen  w-full">
                             <div className="w-full flex flex-col p-5 max-w-lg">
 
 

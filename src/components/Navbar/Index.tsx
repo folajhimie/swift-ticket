@@ -95,7 +95,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                             <Link
                                 to="/"
                             >
-                                <div className="font-[500] text-zinc-800">
+                                <div className="font-[500] text-white">
                                     SwiftTicket
                                 </div>
                                 

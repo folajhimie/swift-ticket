@@ -235,7 +235,7 @@ const Ferry = () => {
         <Modal />
       </div>
 
-      <button onClick={handleButtonClick}>Start Progress</button>
+      {/* <button onClick={handleButtonClick}>Start Progress</button> */}
 
       <div className='bottom-0 absolute z-30 text-lg w-full flex justify-end -left-5'>
         <div className='flex bg-[#61297F]'>
@@ -243,15 +243,15 @@ const Ferry = () => {
           <div className='flex flex-col justify-around  text-white'>
             {/* <div className="progress-bar w-full"></div> */}
             <progress id="file" value={progress} max="100" className='progress-loading w-full'></progress>
-            <div className='flex p-7'>
+            <div className='flex md:py-7 xs:py-2 pr-7'>
               <div className='mr-3 flex flex-col items-center justify-center'>
-                <div className='text-3xl text-gray-300'>01{progress}</div>
+                {/* <div className='text-3xl text-gray-300'>01{progress}</div> */}
               </div>
               <div>
-                <div className='font-light text-sm'>
+                <div className='font-semibold md:text-sm xs:text-[8px]'>
                   Ferry Transport
                 </div>
-                <div className='font-light text-[10px]'>
+                <div className='font-light md:text-[10px] xs:text-[6px]'>
                   Get Online Tickets
                 </div>
               </div>
@@ -262,15 +262,15 @@ const Ferry = () => {
           <div className='flex flex-col justify-around text-white'>
             {/* <div className="progress-bar w-full"></div> */}
             <progress id="file" value={count} max="100" className='progress-loading w-full'></progress>
-            <div className='flex py-7 pr-7'>
+            <div className='flex md:py-7 xs:py-2 pr-7'>
               <div className='pl-7 border-l-2 mr-3 flex flex-col items-center justify-center'>
-                <div className='text-3xl text-gray-300'>02{count}</div>
+                {/* <div className='text-3xl text-gray-300'>02{count}</div> */}
               </div>
               <div>
-                <div className='font-light text-sm'>
+                <div className='font-semibold md:text-sm xs:text-[8px]'>
                   Train Transport
                 </div>
-                <div className='font-light text-[10px]'>
+                <div className='font-light md:text-[10px] xs:text-[6px]'>
                   Get Online Tickets
                 </div>
               </div>
@@ -281,15 +281,15 @@ const Ferry = () => {
           <div className='flex flex-col justify-around text-white'>
             {/* <div className="progress-bar w-full"></div> */}
             <progress id="file" value={bar} max="100" className='progress-loading w-full'></progress>
-            <div className='flex py-7 pr-7'>
+            <div className='flex md:py-7 xs:py-2 pr-7'>
               <div className='pl-7 border-l-2 mr-3 flex flex-col items-center justify-center'>
-                <div className='text-3xl text-gray-300'>03{bar}</div>
+                {/* <div className='text-3xl text-gray-300'>03{bar}</div> */}
               </div>
               <div className=''>
-                <div className='font-light text-sm'>
+                <div className='font-semibold md:text-sm xs:text-[8px]'>
                   BRT Transport
                 </div>
-                <div className='font-light text-[10px]'>
+                <div className='font-light md:text-[10px] xs:text-[6px]'>
                   Get Online Tickets
                 </div>
               </div>

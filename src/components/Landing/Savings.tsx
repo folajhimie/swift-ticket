@@ -119,7 +119,7 @@ const Savings = () => {
 
                                     <div className='flex mt-12'>
                                         <img alt="" src={redArrow} className="text-[1px] w-5 h-5" />
-                                        <span className='ml-3 text-sm text-zinc-800'>Target Savings</span>
+                                        <span className='ml-3 text-sm text-zinc-800'>Flex Naira</span>
                                     </div>
                                 </div>
 

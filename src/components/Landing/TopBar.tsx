@@ -5,7 +5,8 @@ import square from '../../assets/svg/square.svg';
 // import { SelectedPage } from '@/shared/types';
 import SecondaryButton from '../../shared/SecondaryButton';
 import ios from '../../assets/svg/black-ios.svg';
-import playStore from '../../assets/svg/play-store.svg'
+import playStore from '../../assets/svg/play-store.svg';
+
 
 // type Props = {
 //     selectedPage: SelectedPage;
