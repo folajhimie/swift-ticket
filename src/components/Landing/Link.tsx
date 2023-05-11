@@ -1,5 +1,5 @@
-import { SelectedPage } from "../../shared/types";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+// import { SelectedPage } from "../../shared/types";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
 // import { Link } from 'react-router-dom';
 // import { useState } from 'react'
 
@@ -7,51 +7,16 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {
     page: string;
-    selectedPage: SelectedPage;
-    setSelectedPage: (value: SelectedPage) => void;
-    toggle?: boolean;
 };
 
-const Link = ({ page, selectedPage, setSelectedPage }: Props) => {
-    const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
-
-    // const [unit, setUnit] = useState<number>(0)
-    // const [firstToggle, setFirstToggle] = useState<boolean>(false)
-    // const [secondToggle, setSecondToggle] = useState<boolean>(false)
-
-    // const renderNextForm = () => {
-    //     setSelectedPage(lowerCasePage)
-    //     setFirstToggle(true)
-    //     setUnit(1)
-    //     if (unit === 1 && firstToggle) {
-    //         setSecondToggle(false)
-    //     }
-    // };
-
-    // const renderPrevForm = () => {
-    //     setSelectedPage(lowerCasePage)
-    //     setSecondToggle(true)
-    //     setUnit(2)
-    //     if (unit === 2 && secondToggle) {
-    //         setFirstToggle(false)
-    //     }
-    // };
-
+const Link = ({ page }: Props) => {
 
     return (
-        <AnchorLink
-            className={`${selectedPage === lowerCasePage ? "text-[#61297F]" : ""}
-            transition duration-500 mr-2 rounded px-1 py-1 flex w-full text-[#61297F] text-xs
-      `}
-            href={`#${lowerCasePage}`}
-            onClick={() => setSelectedPage(lowerCasePage)}
-            
+        <div
+            className={`transition duration-500 mr-2 rounded px-1 py-1 flex w-full text-[#61297F] text-xs`}  
         >
             {page}
-            {/* <TiLocationArrow className=
-                {`${toggle ? "flex" : "hidden"} rotate-[135deg] ml-3 `}
-            /> */}
-        </AnchorLink>
+        </div>
     );
 };
 

@@ -28,7 +28,7 @@ const Modal = () => {
     const [person, setPerson] = useState('');
 
 
-    const [startDate, setStartDate] = useState(new Date());
+    const [startDate, setStartDate] = useState<Date | null>(new Date());
 
     
 

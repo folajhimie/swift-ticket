@@ -14,9 +14,9 @@ import LayoutItem from "./components/Landing/LayoutItem";
 import Landing from "./components/Landing/Landing";
 // import Square from './components/Navbar/Square';
 // import Resources from './components/Navbar/Resources/Index'
-import Register from "./page/register/Register";
-import SignIn from "./page/sign-in/SignIn";
-import ForgotPassword from "./page/ForgotPassword/ForgotPassword";
+import Register from "./pages/register/Register";
+import SignIn from "./pages/sign-in/SignIn";
+import ForgotPassword from "./pages/ForgotPassword/ForgotPassword";
 
 
 
@@ -35,9 +35,9 @@ function App() {
             {/* <Route path="tasks" element={<Ferry />} /> */}
           </Route>
 
-          <Route path="/tasks" element={<LayoutItem />}>
+          <Route path="/tickets" element={<LayoutItem />}>
             <Route
-              path="/tasks"
+              path="/tickets"
               element={<Landing/>}
             />
             {/* <Route path="tasks" element={<Ferry />} /> */}

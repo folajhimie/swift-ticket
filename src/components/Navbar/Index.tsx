@@ -8,8 +8,8 @@ import { SelectedPage } from "../../shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import SecondaryButton from "@/shared/SecondaryButton";
 import PrimaryButton from "@/shared/PrimaryButton";
-import Square from "../../components/Navbar/Square";
-import Resources from '../../components/Navbar/Resources/Index';
+// import Square from "../../components/Navbar/Square";
+// import Resources from '../../components/Navbar/Resources/Index';
 import { Link } from "react-router-dom";
 
 // import { TiLocationArrow } from "react-icons/ti";
@@ -18,11 +18,9 @@ import { Link } from "react-router-dom";
 
 type Props = {
     isTopOfPage: boolean;
-    selectedPage: SelectedPage;
-    setSelectedPage: (value: SelectedPage) => void
 }
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
+const Navbar = ({ isTopOfPage }: Props) => {
 
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const isAboveMediumScreens = useMediaQuery("(min-width: 1024px)");
@@ -98,7 +96,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                 <div className="font-[500] text-white">
                                     SwiftTicket
                                 </div>
-                                
+
                             </Link>
                         </span>
 
@@ -110,85 +108,54 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                 <div className=" w-full flex items-center justify-evenly sm:text-xs sm:py-2 sm:px-3">
 
                                     <div className="mr-3"
-                                        onClick={renderNextForm}
                                     >
                                         <div className="flex">
-                                            <Linking
-                                                page="Home"
-                                                selectedPage={selectedPage}
-                                                setSelectedPage={setSelectedPage}
-                                                toggle={true}
-                                            />
-                                            {/* <TiLocationArrow className=
-                                                {`${inputs.firstInput ? "rotate-[310deg]" : "rotate-[135deg]"} relative top-2 right-8 `}
-                                            /> */}
+                                            <Link className="flex items-center" to="/">
+                                                <Linking
+                                                    page="Home"
+                                                />
+                                            </Link>
                                         </div>
-                                        {inputs.first === 1 &&
-                                            // <div className="w-full absolute top-20 transition duration-500">
-                                            //     <Slide direction="up">
-                                            //         <Square/>
-                                            //     </Slide>
-
-                                            // </div>
-                                            <div className="w-full absolute top-20 transition duration-500">
-                                                <Square />
-                                            </div>
-                                        }
                                     </div>
-                                    {/* <TiLocationArrow className="rotate-[135deg]"/> */}
 
-                                    <div className="mr-3">
+                                    <div
+                                        className="mr-3"
+                                    >
                                         <div className="flex">
-                                            <Linking
-                                                page="Tickets"
-                                                selectedPage={selectedPage}
-                                                setSelectedPage={setSelectedPage}
-                                                toggle={false}
-                                            />
-
+                                            <Link className="flex items-center" to="/tickets">
+                                                <Linking
+                                                    page="Tickets"
+                                                />
+                                            </Link>
                                         </div>
 
                                     </div>
 
                                     <div
                                         className="mr-3"
-                                        onClick={renderPrevForm}
                                     >
                                         <div className="flex">
-                                            <Linking
-                                                page="Fare Prices"
-                                                selectedPage={selectedPage}
-                                                setSelectedPage={setSelectedPage}
-                                                toggle={true}
-                                            />
-                                            {/* <TiLocationArrow className=
-                                                {`${inputs.secondInputs ? "rotate-[310deg]" : "rotate-[135deg]"} relative top-2 right-8 `}
-                                            /> */}
-                                        </div>
-                                        {inputs.second === 2 &&
-
-                                            <div className="w-full absolute top-20">
-                                                <Resources />
-
-                                            </div>
-                                        }
-                                    </div>
-
-                                    <div className="mr-3">
-                                        <div
-                                            className="flex"
-                                            onClick={handleClick}
-                                        >
-                                            <Linking
-                                                page="FAQs"
-                                                selectedPage={selectedPage}
-                                                setSelectedPage={setSelectedPage}
-                                                toggle={false}
-                                            />
+                                            <Link className="flex items-center" to="/tickets">
+                                                <Linking
+                                                    page="Fare Prices"
+                                                />
+                                            </Link>
                                         </div>
 
                                     </div>
 
+                                    <div
+                                        className="mr-3"
+                                    >
+                                        <div className="flex">
+                                            <Link className="flex items-center" to="/tickets">
+                                                <Linking
+                                                    page="FAQs"
+                                                />
+                                            </Link>
+                                        </div>
+
+                                    </div>
                                 </div>
                                 <div className=" flex items-center justify-center xl:w-5/6 lg:w-5/6">
                                     <Link className="link flex items-center" to="/auth/signin">
@@ -230,30 +197,26 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
                     {/* MENU ITEMS */}
                     <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-                        <Linking
-                            page="Home"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                            toggle={false}
-                        />
-                        <Linking
-                            page="Products"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                            toggle={false}
-                        />
-                        <Linking
-                            page="Company"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                            toggle={false}
-                        />
-                        <Linking
-                            page="Contact Us"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                            toggle={false}
-                        />
+                        <Link className="flex items-center" to="/tickets">
+                            <Linking
+                                page="Home"
+                            />
+                        </Link>
+                        <Link className="flex items-center" to="/tickets">
+                            <Linking
+                                page="Tickets"
+                            />
+                        </Link>
+                        <Link className="flex items-center" to="/tickets">
+                            <Linking
+                                page="Fare Prices"
+                            />
+                        </Link>
+                        <Link className="flex items-center" to="/tickets">
+                            <Linking
+                                page="FAQs"
+                            />
+                        </Link>
                     </div>
                 </div>
             )}

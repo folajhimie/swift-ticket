@@ -1,5 +1,5 @@
-import { SelectedPage } from "../../shared/types";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+// import { SelectedPage } from "../../shared/types";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
 // import { Link } from 'react-router-dom';
 // import { useState } from 'react'
 
@@ -7,13 +7,10 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 
 type Props = {
     page: string;
-    selectedPage: SelectedPage;
-    setSelectedPage: (value: SelectedPage) => void;
-    toggle?: boolean;
 };
 
-const Linking = ({ page, selectedPage, setSelectedPage }: Props) => {
-    const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
+const Linking = ({ page }: Props) => {
+    // const lowerCasePage = page.toLowerCase().replace(/ /g, "") as SelectedPage;
 
     // const [unit, setUnit] = useState<number>(0)
     // const [firstToggle, setFirstToggle] = useState<boolean>(false)
@@ -37,21 +34,12 @@ const Linking = ({ page, selectedPage, setSelectedPage }: Props) => {
     //     }
     // };
 
-
     return (
-        <AnchorLink
-            className={`${selectedPage === lowerCasePage ? "text-white" : ""}
-            transition duration-500 mr-2 rounded px-1 py-1 flex w-full text-gray-300 text-xs
-      `}
-            href={`#${lowerCasePage}`}
-            onClick={() => setSelectedPage(lowerCasePage)}
-            
+        <div
+            className={`transition duration-500 mr-2 rounded px-1 py-1 flex w-full text-white text-xs`}  
         >
             {page}
-            {/* <TiLocationArrow className=
-                {`${toggle ? "flex" : "hidden"} rotate-[135deg] ml-3 `}
-            /> */}
-        </AnchorLink>
+        </div>
     );
 };
 

@@ -5,12 +5,12 @@ import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 // import Link from "./Link";
 import Linking from "./Link";
 import { Link } from "react-router-dom";
-import { SelectedPage } from "../../shared/types";
+// import { SelectedPage } from "../../shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import SecondaryButton from "@/shared/SecondaryButton";
 import PrimaryButton from "@/shared/PrimaryButton";
-import Square from "../../components/Navbar/Square";
-import Resources from '../../components/Navbar/Resources/Index'
+// import Square from "../../components/Navbar/Square";
+// import Resources from '../../components/Navbar/Resources/Index'
 
 // import { TiLocationArrow } from "react-icons/ti";
 
@@ -18,68 +18,67 @@ import Resources from '../../components/Navbar/Resources/Index'
 
 type Props = {
     isTopOfPage: boolean;
-    selectedPage: SelectedPage;
-    setSelectedPage: (value: SelectedPage) => void
 }
 
-const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
+const Navbar = ({ isTopOfPage }: Props) => {
 
     const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
     const isAboveMediumScreens = useMediaQuery("(min-width: 1024px)");
     const navbarBackground = isTopOfPage ? "" : "bg-[#F2F7FF] drop-shadow ";
 
     // const [count, setCount] = useState<number>(0)
-    const [firstToggle, setFirstToggle] = useState<boolean>(true)
-    const [secondToggle, setSecondToggle] = useState<boolean>(true)
+    
+    // const [firstToggle, setFirstToggle] = useState<boolean>(true)
+    // const [secondToggle, setSecondToggle] = useState<boolean>(true)
 
-    const [inputs, setInputs] = useState({
-        first: 0,
-        second: 0,
-        firstInput: false,
-        secondInputs: false,
-    });
+    // const [inputs, setInputs] = useState({
+    //     first: 0,
+    //     second: 0,
+    //     firstInput: false,
+    //     secondInputs: false,
+    // });
 
-    const [state, setState] = useState(0);
+    // const [state, setState] = useState(0);
 
-    const handleClick = () => {
-        setState((prev) => prev + 3);
-        console.log(state, "new state");
-    }
+    // const handleClick = () => {
+    //     setState((prev) => prev + 3);
+    //     console.log(state, "new state");
+    // }
 
-    const renderNextForm = () => {
+    // const renderNextForm = () => {
 
-        setFirstToggle(true)
-        setInputs((prevState) => ({
-            ...prevState,
-            first: 1,
-            second: 0,
-            firstInput: true,
-            secondInputs: false,
-        }));
-        if (inputs.first === 1 && firstToggle) {
-            setSecondToggle(false)
-            console.log("service...", secondToggle);
-        }
-        console.log("object..", inputs, "hope..", firstToggle);
-    };
+    //     setFirstToggle(true)
+    //     setInputs((prevState) => ({
+    //         ...prevState,
+    //         first: 1,
+    //         second: 0,
+    //         firstInput: true,
+    //         secondInputs: false,
+    //     }));
+    //     if (inputs.first === 1 && firstToggle) {
+    //         setSecondToggle(false)
+    //         console.log("service...", secondToggle);
+    //     }
+    //     console.log("object..", inputs, "hope..", firstToggle);
+    // };
 
-    const renderPrevForm = () => {
+    // const renderPrevForm = () => {
 
-        setSecondToggle(true)
+    //     setSecondToggle(true)
 
-        setInputs((prevState) => ({
-            ...prevState,
-            first: 0,
-            second: 2,
-            firstInput: false,
-            secondInputs: true,
-        }));
-        if (inputs.second === 2 && secondToggle) {
-            setFirstToggle(false)
-        }
-        console.log("first object..", inputs, 'print..', secondToggle)
-        console.log("second object..", firstToggle)
-    };
+    //     setInputs((prevState) => ({
+    //         ...prevState,
+    //         first: 0,
+    //         second: 2,
+    //         firstInput: false,
+    //         secondInputs: true,
+    //     }));
+    //     if (inputs.second === 2 && secondToggle) {
+    //         setFirstToggle(false)
+    //     }
+    //     console.log("first object..", inputs, 'print..', secondToggle)
+    //     console.log("second object..", firstToggle)
+    // };
 
 
     return (
@@ -98,7 +97,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                 <div className="font-[500] text-zinc-800">
                                     SwiftTicket
                                 </div>
-                                
+
                             </Link>
                         </span>
 
@@ -110,96 +109,59 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                                 <div className=" w-full flex items-center justify-evenly sm:text-xs sm:py-2 sm:px-3">
 
                                     <div className="mr-3"
-                                        onClick={renderNextForm}
+
                                     >
                                         <div className="flex">
-                                            <Linking
-                                                page="Buy Tickets"
-                                                selectedPage={selectedPage}
-                                                setSelectedPage={setSelectedPage}
-                                                toggle={true}
-                                            />
-                                            {/* <TiLocationArrow className=
-                                                {`${inputs.firstInput ? "rotate-[310deg]" : "rotate-[135deg]"} relative top-2 right-8 `}
-                                            /> */}
+                                            <Link className="flex items-center" to="/tickets">
+                                                <Linking
+                                                    page="Buy Tickets"
+                                                />
+                                            </Link>
                                         </div>
-                                        {inputs.first === 1 &&
-                                            // <div className="w-full absolute top-20 transition duration-500">
-                                            //     <Slide direction="up">
-                                            //         <Square/>
-                                            //     </Slide>
-
-                                            // </div>
-                                            <div className="w-full absolute top-20 transition duration-500">
-                                                <Square />
-                                            </div>
-                                        }
                                     </div>
                                     {/* <TiLocationArrow className="rotate-[135deg]"/> */}
 
                                     <div className="mr-3">
                                         <div className="flex">
-                                            <Linking
-                                                page="Fare Prices"
-                                                selectedPage={selectedPage}
-                                                setSelectedPage={setSelectedPage}
-                                                toggle={false}
-                                            />
-
+                                            <Link className="flex items-center" to="/tickets">
+                                                <Linking
+                                                    page="Fare Prices"
+                                                />
+                                            </Link>
                                         </div>
 
                                     </div>
 
                                     <div
                                         className="mr-3"
-                                        onClick={renderPrevForm}
                                     >
                                         <div className="flex">
-                                            <Linking
-                                                page="Stories"
-                                                selectedPage={selectedPage}
-                                                setSelectedPage={setSelectedPage}
-                                                toggle={true}
-                                            />
-                                            {/* <TiLocationArrow className=
-                                                {`${inputs.secondInputs ? "rotate-[310deg]" : "rotate-[135deg]"} relative top-2 right-8 `}
-                                            /> */}
+                                            <Link className="flex items-center" to="/tickets">
+                                                <Linking
+                                                    page="Stories"
+                                                />
+                                            </Link>
                                         </div>
-                                        {inputs.second === 2 &&
-
-                                            <div className="w-full absolute top-20">
-                                                <Resources />
-
-                                            </div>
-                                        }
                                     </div>
 
                                     <div className="mr-3">
-                                        <div
-                                            className="flex"
-                                            onClick={handleClick}
-                                        >
-                                            <Linking
-                                                page="FAQs"
-                                                selectedPage={selectedPage}
-                                                setSelectedPage={setSelectedPage}
-                                                toggle={false}
-                                            />
+                                        <div className="flex">
+                                            <Link className="flex items-center" to="/tickets">
+                                                <Linking
+                                                    page="FAQs"
+                                                />
+                                            </Link>
                                         </div>
 
                                     </div>
 
                                     <div className="mr-3">
-                                        <div
-                                            className="flex"
-                                            onClick={handleClick}
-                                        >
-                                            <Linking
-                                                page="Resources"
-                                                selectedPage={selectedPage}
-                                                setSelectedPage={setSelectedPage}
-                                                toggle={false}
-                                            />
+                                        <div className="flex">
+                                            <Link className="flex items-center" to="/tickets">
+                                                <Linking
+                                                    page="Resources"
+                                                />
+                                            </Link>
                                         </div>
 
                                     </div>
@@ -245,37 +207,31 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
 
                     {/* MENU ITEMS */}
                     <div className="ml-[33%] flex flex-col gap-10 text-2xl">
-                        <Linking
-                            page="Buy Tickets"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                            toggle={false}
-                        />
-                        <Linking
-                            page="Fare Prices"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                            toggle={false}
-                        />
-                        <Linking
-                            page="Stories"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                            toggle={false}
-                        />
-                        <Linking
-                            page="FAQs"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                            toggle={false}
-                        />
-                        <Linking
-                            page="Resources"
-                            selectedPage={selectedPage}
-                            setSelectedPage={setSelectedPage}
-                            toggle={false}
-                        />
-
+                        <Link className="flex items-center" to="/tickets">
+                            <Linking
+                                page="Buy Tickets"
+                            />
+                        </Link>
+                        <Link className="flex items-center" to="/tickets">
+                            <Linking
+                                page="Fare Prices"
+                            />
+                        </Link>
+                        <Link className="flex items-center" to="/tickets">
+                            <Linking
+                                page="Stories"
+                            />
+                        </Link>
+                        <Link className="flex items-center" to="/tickets">
+                            <Linking
+                                page="FAQs"
+                            />
+                        </Link>
+                        <Link className="flex items-center" to="/tickets">
+                            <Linking
+                                page="Resources"
+                            />
+                        </Link>
                     </div>
                 </div>
             )}
