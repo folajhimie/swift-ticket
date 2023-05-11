@@ -4,7 +4,7 @@ import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 // import { Slide } from "react-awesome-reveal";
 // import Link from "./Link";
 import Linking from "./Link";
-import { SelectedPage } from "../../shared/types";
+// import { SelectedPage } from "../../shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
 import SecondaryButton from "@/shared/SecondaryButton";
 import PrimaryButton from "@/shared/PrimaryButton";
@@ -27,57 +27,57 @@ const Navbar = ({ isTopOfPage }: Props) => {
     const navbarBackground = isTopOfPage ? "" : "bg-transparent drop-shadow";
 
     // const [count, setCount] = useState<number>(0)
-    const [firstToggle, setFirstToggle] = useState<boolean>(true)
-    const [secondToggle, setSecondToggle] = useState<boolean>(true)
+    // const [firstToggle, setFirstToggle] = useState<boolean>(true)
+    // const [secondToggle, setSecondToggle] = useState<boolean>(true)
 
-    const [inputs, setInputs] = useState({
-        first: 0,
-        second: 0,
-        firstInput: false,
-        secondInputs: false,
-    });
+    // const [inputs, setInputs] = useState({
+    //     first: 0,
+    //     second: 0,
+    //     firstInput: false,
+    //     secondInputs: false,
+    // });
 
-    const [state, setState] = useState(0);
+    // const [state, setState] = useState(0);
 
-    const handleClick = () => {
-        setState((prev) => prev + 3);
-        console.log(state, "new state");
-    }
+    // const handleClick = () => {
+    //     setState((prev) => prev + 3);
+    //     console.log(state, "new state");
+    // }
 
-    const renderNextForm = () => {
+    // const renderNextForm = () => {
 
-        setFirstToggle(true)
-        setInputs((prevState) => ({
-            ...prevState,
-            first: 1,
-            second: 0,
-            firstInput: true,
-            secondInputs: false,
-        }));
-        if (inputs.first === 1 && firstToggle) {
-            setSecondToggle(false)
-            console.log("service...", secondToggle);
-        }
-        console.log("object..", inputs, "hope..", firstToggle);
-    };
+    //     setFirstToggle(true)
+    //     setInputs((prevState) => ({
+    //         ...prevState,
+    //         first: 1,
+    //         second: 0,
+    //         firstInput: true,
+    //         secondInputs: false,
+    //     }));
+    //     if (inputs.first === 1 && firstToggle) {
+    //         setSecondToggle(false)
+    //         console.log("service...", secondToggle);
+    //     }
+    //     console.log("object..", inputs, "hope..", firstToggle);
+    // };
 
-    const renderPrevForm = () => {
+    // const renderPrevForm = () => {
 
-        setSecondToggle(true)
+    //     setSecondToggle(true)
 
-        setInputs((prevState) => ({
-            ...prevState,
-            first: 0,
-            second: 2,
-            firstInput: false,
-            secondInputs: true,
-        }));
-        if (inputs.second === 2 && secondToggle) {
-            setFirstToggle(false)
-        }
-        console.log("first object..", inputs, 'print..', secondToggle)
-        console.log("second object..", firstToggle)
-    };
+    //     setInputs((prevState) => ({
+    //         ...prevState,
+    //         first: 0,
+    //         second: 2,
+    //         firstInput: false,
+    //         secondInputs: true,
+    //     }));
+    //     if (inputs.second === 2 && secondToggle) {
+    //         setFirstToggle(false)
+    //     }
+    //     console.log("first object..", inputs, 'print..', secondToggle)
+    //     console.log("second object..", firstToggle)
+    // };
 
 
     return (
