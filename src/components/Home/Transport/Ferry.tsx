@@ -154,18 +154,18 @@ const Ferry = () => {
   
 
   
-  const handleButtonClick = () => {
-    console.log("far away...", countNumber);
-    // showMsg()
-    // jetItem
+  // const handleButtonClick = () => {
+  //   console.log("far away...", countNumber);
+  //   // showMsg()
+  //   // jetItem
 
 
-    // timerId
-    // buy()
-    // interbar
-    // getFirstRow()
-    console.log("jack")
-  };
+  //   // timerId
+  //   // buy()
+  //   // interbar
+  //   // getFirstRow()
+  //   console.log("jack")
+  // };
 
 
 
@@ -174,6 +174,10 @@ const Ferry = () => {
     <div>
       <div
         className='bg-slate-900 opacity-60 absolute z-20 h-full w-full'
+        style={{
+          height: "100vh",
+          width: "100%"
+        }}
       >
 
       </div>

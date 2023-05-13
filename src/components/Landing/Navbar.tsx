@@ -27,7 +27,7 @@ const Navbar = ({ isTopOfPage }: Props) => {
     const navbarBackground = isTopOfPage ? "" : "bg-[#F2F7FF] drop-shadow ";
 
     // const [count, setCount] = useState<number>(0)
-    
+
     // const [firstToggle, setFirstToggle] = useState<boolean>(true)
     // const [secondToggle, setSecondToggle] = useState<boolean>(true)
 
@@ -206,7 +206,7 @@ const Navbar = ({ isTopOfPage }: Props) => {
                     </div>
 
                     {/* MENU ITEMS */}
-                    <div className="ml-[33%] flex flex-col gap-10 text-2xl">
+                    <div className="ml-[33%] flex flex-col gap-5 text-2xl">
                         <Link className="flex items-center" to="/tickets">
                             <Linking
                                 page="Buy Tickets"
@@ -232,6 +232,24 @@ const Navbar = ({ isTopOfPage }: Props) => {
                                 page="Resources"
                             />
                         </Link>
+                        <div className=" flex flex-col items-center justify-center xl:w-full lg:w-full">
+                            <Link className="w-[90%] mb-4 text-xs" to="/auth/signin">
+                                <div
+                                className="flex justify-center w-full text-xs cursor rounded-md bg-white border font-semibold px-4 py-2 text-[#61297F] sm:text-xs sm:py-3 sm:px-6 mr-4 lg:text-xs lg:w-full xl:w-full"
+                                >
+                                    Sign in
+                                </div>
+                                {/* <PrimaryButton>
+                                </PrimaryButton> */}
+                            </Link>
+                            <Link className="flex items-center w-[90%] mb-4 text-xs" to="/auth/register">
+                                <div
+                                className="flex justify-center w-full text-xs cursor rounded-md bg-[#61297F] font-medium px-4 py-2 text-white sm:text-xs sm:py-3 sm:px-6 lg:text-xs lg:w-full xl:w-full"
+                                >
+                                    Create free account
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             )}

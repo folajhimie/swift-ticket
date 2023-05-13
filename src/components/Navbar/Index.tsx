@@ -217,6 +217,24 @@ const Navbar = ({ isTopOfPage }: Props) => {
                                 page="FAQs"
                             />
                         </Link>
+                        <div className=" flex flex-col items-center justify-center xl:w-full lg:w-full">
+                            <Link className="w-[90%] mb-4 text-xs" to="/auth/signin">
+                                <div
+                                    className="flex justify-center w-full text-xs cursor rounded-md bg-[#f2f7ff] border font-semibold px-4 py-2 text-[#61297F] sm:text-xs sm:py-3 sm:px-6 mr-4 lg:text-xs lg:w-full xl:w-full"
+                                >
+                                    Sign in
+                                </div>
+                                {/* <PrimaryButton>
+                                    </PrimaryButton> */}
+                            </Link>
+                            <Link className="flex items-center w-[90%] mb-4 text-xs" to="/auth/register">
+                                <div
+                                    className="flex justify-center w-full text-xs cursor rounded-md bg-[#f2f7ff] font-medium px-4 py-2 text-[#61297F] sm:text-xs sm:py-3 sm:px-6 lg:text-xs lg:w-full xl:w-full"
+                                >
+                                    Create free account
+                                </div>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             )}

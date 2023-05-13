@@ -47,7 +47,7 @@ const Sponsor = () => {
                 </div> */}
 
                 <div className='flex justify-center items-center mx-5 mt-10'>
-                    <div className='rounded-lg bg-[#61297F] p-3 grid grid-cols-2 gap-0 xl:w-full lg:w-full xs:w-full justify-center items-center'>
+                    <div className='rounded-lg bg-[#61297F] p-3 grid md:grid-cols-2 xs:grid-cols-1 gap-0 xl:w-full lg:w-full xs:w-full justify-center items-center'>
                         <div className='lg:flex justify-center items-center xs:justify-center xs:items-center md:flex sm:flex xs:flex w-full '>
                             <div className='font-semibold text-white xl:text-3xl lg:text-3xl md:text-2xl xs:text-[9px] flex-col flex'>
                                 <div>

@@ -205,8 +205,12 @@ const Modal = () => {
                                             onChange={() => setTimeZone(timeZone)} 
                                             value={timeZone} />
                                         </div> */}
-                                        <div className='outline-none md:text-xs xs:text-[8px]'>
-                                            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+                                        <div
+                                        className={`flex flex-cols lg:flex-row lg:justify-between p-[0rem] lg:p-0 lg:mb-0 mt-0 cursor-pointer`}
+                                        >
+                                            <div className='date-picker-wrapper outline-none md:text-xs xs:text-[8px]'>
+                                                <DatePicker className='date-picker-wrapper outline-none ' selected={startDate} onChange={(date) => setStartDate(date)} />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
