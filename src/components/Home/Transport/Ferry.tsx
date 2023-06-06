@@ -146,7 +146,12 @@ const Ferry = () => {
   // const jetItem = setInterval(showMsg, 1000)
 
   return (
-    <div>
+    <div 
+      style={{
+        height: "100vh",
+        width: "100%"
+      }}
+    >
       <div
         className='bg-slate-900 opacity-60 absolute z-20 h-full w-full'
         style={{
@@ -214,7 +219,6 @@ const Ferry = () => {
 
 
       </div>
-
         <div className='flex bg-[#61297F] bottom-0 absolute z-20 text-lg w-fit justify-end right-3'>
           <div className='flex'>
             <div className='flex flex-col justify-around  text-white'>
@@ -272,6 +276,7 @@ const Ferry = () => {
           </div>
 
         </div>
+
       {/* <button onClick={handleButtonClick}>Start Progress</button> */}
 
       {/* <div className='bottom-0 absolute z-20 text-lg w-full flex justify-end -left-5'>
