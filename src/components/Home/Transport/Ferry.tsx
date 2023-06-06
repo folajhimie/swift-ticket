@@ -1,14 +1,8 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import ferry from '../../../assets/ferry.png'
 import Modal from '@/components/Modal/Modal';
 import train from '../../../assets/train.png';
 import bus from '../../../assets/bus.png';
-// import { clearInterval } from 'timers';
-
-
-let countNumber: number;
-// let lastCount: number;
-
 
 
 const Ferry = () => {
@@ -151,25 +145,6 @@ const Ferry = () => {
 
   // const jetItem = setInterval(showMsg, 1000)
 
-  
-
-  
-  // const handleButtonClick = () => {
-  //   console.log("far away...", countNumber);
-  //   // showMsg()
-  //   // jetItem
-
-
-  //   // timerId
-  //   // buy()
-  //   // interbar
-  //   // getFirstRow()
-  //   console.log("jack")
-  // };
-
-
-
-
   return (
     <div>
       <div
@@ -227,22 +202,17 @@ const Ferry = () => {
           </div>
 
         )}
+        <span
+          className='text-center tracking-wide text-white lg:text-[30px] sm:text-[30px] leading-[20px] absolute z-20 w-full items-center justify-center text-lg font-bold md:top-1/4 xs:top-[25%]'
+        >
+          The Convenient Way to Buy <span className='underline inline mx-0'>Ferry</span> tickets.
+        </span>
 
-      </div>
-      <span
-        className='text-center tracking-wide text-white lg:text-[30px] sm:text-[30px] leading-[20px] absolute z-20 w-full items-center justify-center text-lg font-bold md:top-1/4 xs:top-[25%]'
-      >
-        The Convenient Way to Buy <span className='underline inline mx-0'>Ferry</span> tickets.
-      </span>
+        <div className='absolute z-20 md:top-[40%] xs:top-[30%] text-lg w-full items-center justify-center flex'>
+          <Modal />
+        </div>
 
-      <div className='absolute z-20 md:top-[40%] xs:top-[30%] text-lg w-full items-center justify-center flex'>
-        <Modal />
-      </div>
-
-      {/* <button onClick={handleButtonClick}>Start Progress</button> */}
-
-      <div className='bottom-0 absolute z-20 text-lg w-full flex justify-end -left-5'>
-        <div className='flex bg-[#61297F]'>
+        <div className='flex bg-[#61297F] bottom-0 absolute z-20 text-lg w-fit justify-end right-3'>
 
           <div className='flex flex-col justify-around  text-white'>
             {/* <div className="progress-bar w-full"></div> */}
@@ -261,8 +231,6 @@ const Ferry = () => {
               </div>
             </div>
           </div>
-
-
           <div className='flex flex-col justify-around text-white'>
             {/* <div className="progress-bar w-full"></div> */}
             <progress id="file" value={count} max="100" className='progress-loading w-full'></progress>
@@ -280,8 +248,6 @@ const Ferry = () => {
               </div>
             </div>
           </div>
-
-
           <div className='flex flex-col justify-around text-white'>
             {/* <div className="progress-bar w-full"></div> */}
             <progress id="file" value={bar} max="100" className='progress-loading w-full'></progress>
@@ -299,10 +265,15 @@ const Ferry = () => {
               </div>
             </div>
           </div>
-
         </div>
 
       </div>
+
+      {/* <button onClick={handleButtonClick}>Start Progress</button> */}
+
+      {/* <div className='bottom-0 absolute z-20 text-lg w-full flex justify-end -left-5'>
+
+      </div> */}
 
     </div>
 

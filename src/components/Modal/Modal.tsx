@@ -66,7 +66,7 @@ const Modal = () => {
 
 
     return (
-        <div>
+        <div className='m-[7px]'>
             <div className='flex justify-between items-center h-12 md:w-80 xs:w-60'>
                 <div className='text-xs' >
                     {/* <div className='text-white mr-2 text-[10px]'>One-way</div> */}
@@ -90,8 +90,8 @@ const Modal = () => {
                 </div> */}
             </div>
             <div className=''>
-                <div className='p-4 flex md:flex-row xs:flex-col mr-3 items-center justify-center text-sm font-semibold md:p-[24px] xs:p-[9px] bg-[#949494] rounded-lg'>
-                    <div className='xs:mr-0 md:mr-3 grid md:grid-cols-4 xs:grid-cols-1 items-center justify-center text-sm font-semibold p-[8px] bg-white rounded-lg'>
+                <div className='p-4 flex md:flex-row xs:flex-col mr-0 items-center justify-center text-sm font-semibold md:p-[24px] xs:p-[9px] bg-[#949494] rounded-lg'>
+                    <div className='xs:mr-0 md:mr-3 grid md:grid-cols-4 xs:grid-cols-1 items-center justify-center text-sm font-semibold p-[6px] bg-white rounded-lg'>
                         <div className='flex pl-7 justify-center items-center xs:mb-3 md:mb-0'>
                             <div>
                                 <div className='flex'>
@@ -226,7 +226,7 @@ const Modal = () => {
                                         </div>
 
                                         <div
-                                            className={`p-[0rem] lg:p-0 ml-[2rem] lg:ml-0 mb-[0rem] bg-white`}
+                                            className={`p-[0rem] lg:p-0 ml-[2rem] lg:ml-0 mb-[0rem] bg-white relative -left-[6px]`}
                                         >
                                             <label
                                                 className={`text-dark_grey font-light pl-1 lg:pl-7 mb-0 md:text-xs xs:text-[8px]`}
@@ -262,12 +262,12 @@ const Modal = () => {
                         </div>
 
                     </div>
-                    <button className='md:text-xs xs:mt-4 md:mt-0 rounded-lg md:py-4 md:px-10 xs:py-2 xs:px-7 xs:text-[7px]  bg-[#61297F] text-white text-semibold'>
-                        search
+                    <button className='md:text-base xs:mt-4 md:mt-0 rounded-lg md:py-[.7rem] md:px-10 xs:py-2 xs:px-7 xs:text-[7px] bg-[#61297F] text-white text-semibold'>
+                        Search
                     </button>
                 </div>
 
-                <div className='mt-14 flex justify-center items-center'>
+                <div className='mt-[1.8rem] flex justify-center items-center'>
                     <div className='md:flex xs:hidden bg-transparent border rounded-lg p-2 mr-4'>
                         <img alt="" src={ios} className="text-[1px] w-4 h-4" />
                         <span className='text-xs mr-2 ml-2 text-white'>Get on iPhone</span>
