@@ -167,7 +167,8 @@ const Ferry = () => {
           <img
             alt="home"
             src={ferry}
-            className="z-10"
+            className="z-10 h-screen bg-cover
+            bg-center flex justify-center items-center"
             style={{
               height: "100vh",
               width: "100%"
@@ -182,7 +183,8 @@ const Ferry = () => {
             <img
               alt="home"
               src={bus}
-              className="z-10"
+              className="z-10 h-screen bg-cover
+              bg-center flex justify-center items-center"
               style={{
                 height: "100vh",
                 width: "100%"
@@ -197,7 +199,8 @@ const Ferry = () => {
             <img
               alt="home"
               src={train}
-              className="z-10"
+              className="z-10 h-screen bg-cover
+              bg-center flex justify-center items-center"
               style={{
                 height: "100vh",
                 width: "100%"
